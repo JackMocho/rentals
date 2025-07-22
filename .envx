@@ -1,0 +1,2 @@
+DB_URL="postgresql://postgres:Kipyegon@10291!@db.xtwvircvsfsjjivfvejx.supabase.co:5432/postgres"
+PORT=3000
