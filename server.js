@@ -26,7 +26,7 @@ app.use('/api/users', userRoutes);
 const setupWebSocket = require('./websocket');
 setupWebSocket(server); // ✅ Now this works
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
