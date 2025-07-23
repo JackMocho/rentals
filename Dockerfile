@@ -10,6 +10,8 @@ RUN curl -fsS https://dotenvx.sh  | sh
 # Copy encrypted .env + keys
 COPY .env.encrypted .env.keys ./
 
+
+
 # Remove unencrypted .env files before build
 RUN dotenvx ext prebuild
 
