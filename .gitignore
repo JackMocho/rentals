@@ -7,7 +7,3 @@
 .env.staging
 .env.test
 .env.preview
-.env.keys
-.env.keys.*
-.env.encrypted.*
-.env.encrypted
