@@ -1,3 +1,4 @@
+require('@dotenvx/dotenvx').config();
 const express = require('express');
 const http = require('http');
 const cors = require('cors');
@@ -5,7 +6,6 @@ const { Pool } = require('pg');
 const chatRoutes = require('./routes/chatRoutes'); // <-- Add this line
 const app = express();
 const server = http.createServer(app);
-require('@dotenvx/dotenvx').config(); // Ensure dotenvx is configured
 
 const pool = new Pool({
   connectionString: process.env.DB_URL,
